@@ -380,7 +380,6 @@ public class Helpers {
      */
     static boolean isFilenameValid(Context context, File file, boolean allowInternal) {
         try {
-            file = file.getCanonicalFile();
 
             if (allowInternal) {
                 if (containsCanonical(context.getFilesDir(), file)
